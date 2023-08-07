@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -108,14 +109,266 @@
       </div>
     </nav>
     <main>
-      <div class="featured_merch">
+      <section class="featured_merch">
         <div class="image_wrapper"></div>
+        <div class="movement_buttons">
+          <div class="move_buttons left_movement_buttons">
+            <svg
+              class="left_button"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              fill="none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Backward</title>
+              <path
+                d="M7.758 3.054 C 7.416 3.147,7.160 3.395,7.061 3.729 C 6.985 3.987,6.985 4.053,7.063 4.323 C 7.125 4.534,7.225 4.638,10.853 8.270 L 14.579 12.000 10.853 15.730 C 7.225 19.362,7.125 19.466,7.063 19.677 C 6.984 19.949,6.984 20.013,7.064 20.283 C 7.156 20.590,7.419 20.849,7.735 20.940 C 8.001 21.018,8.210 21.000,8.460 20.879 C 8.567 20.827,9.977 19.443,12.745 16.671 C 16.526 12.885,16.876 12.524,16.935 12.343 C 17.017 12.094,17.017 11.906,16.935 11.657 C 16.876 11.476,16.528 11.117,12.768 7.353 C 9.951 4.532,8.609 3.214,8.483 3.147 C 8.252 3.024,7.992 2.990,7.758 3.054 "
+                fill="currentColor"
+                stroke="none"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <div class="move_buttons right_movement_buttons">
+            <svg
+              class="right_button"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              fill="none"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Forward</title>
+              <path
+                d="M7.758 3.054 C 7.416 3.147,7.160 3.395,7.061 3.729 C 6.985 3.987,6.985 4.053,7.063 4.323 C 7.125 4.534,7.225 4.638,10.853 8.270 L 14.579 12.000 10.853 15.730 C 7.225 19.362,7.125 19.466,7.063 19.677 C 6.984 19.949,6.984 20.013,7.064 20.283 C 7.156 20.590,7.419 20.849,7.735 20.940 C 8.001 21.018,8.210 21.000,8.460 20.879 C 8.567 20.827,9.977 19.443,12.745 16.671 C 16.526 12.885,16.876 12.524,16.935 12.343 C 17.017 12.094,17.017 11.906,16.935 11.657 C 16.876 11.476,16.528 11.117,12.768 7.353 C 9.951 4.532,8.609 3.214,8.483 3.147 C 8.252 3.024,7.992 2.990,7.758 3.054 "
+                fill="currentColor"
+                stroke="none"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <div class="bottom_image_counter">
+            <div class="bottom_dot not_selected"></div>
+            <div class="bottom_dot not_selected"></div>
+            <div class="bottom_dot not_selected"></div>
+            <div class="bottom_dot not_selected"></div>
+            <div class="bottom_dot selected"></div>
+            <div class="bottom_dot not_selected"></div>
+            <div class="bottom_dot not_selected"></div>
+            <div class="bottom_dot not_selected"></div>
+          </div>
+        </div>
         <img
           src="./images/showcase_1.jpg"
           class="showcase_image"
           alt="showcase merch image"
         />
-      </div>
+      </section>
+      <section class="top_picks">
+        <div class="moving_picks">
+          <div class="single_merch">
+            <img
+              src="./images/top_picks/baby-cap-black.webp"
+              class="merch_image"
+              alt="Top Pick Image"
+            />
+            <div class="merch_brief">
+              <div class="merch_name">Baby Cap</div>
+              <div class="merch_price">
+                <div class="merch_amount">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="ERC_Coin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"
+                    />
+                  </svg>
+                  <div class="merch_amount_only">10.00</div>
+                </div>
+                <div class="currency_symbol">EC</div>
+              </div>
+            </div>
+          </div>
+          <div class="single_merch">
+            <img
+              src="./images/top_picks/baby-onesie-beige-1.webp"
+              class="merch_image"
+              alt="Top Pick Image"
+            />
+            <div class="merch_brief">
+              <div class="merch_name">Baby Cap</div>
+              <div class="merch_price">
+                <div class="merch_amount">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="ERC_Coin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"
+                    />
+                  </svg>
+                  <div class="merch_amount_only">10.00</div>
+                </div>
+                <div class="currency_symbol">EC</div>
+              </div>
+            </div>
+          </div>
+          <div class="single_merch">
+            <img
+              src="./images/top_picks/bag-1-dark.webp"
+              class="merch_image"
+              alt="Top Pick Image"
+            />
+            <div class="merch_brief">
+              <div class="merch_name">Baby Cap</div>
+              <div class="merch_price">
+                <div class="merch_amount">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="ERC_Coin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"
+                    />
+                  </svg>
+                  <div class="merch_amount_only">10.00</div>
+                </div>
+                <div class="currency_symbol">EC</div>
+              </div>
+            </div>
+          </div>
+          <div class="single_merch">
+            <img
+              src="./images/top_picks/cup-black.webp"
+              class="merch_image"
+              alt="Top Pick Image"
+            />
+            <div class="merch_brief">
+              <div class="merch_name">Baby Cap</div>
+              <div class="merch_price">
+                <div class="merch_amount">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="ERC_Coin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"
+                    />
+                  </svg>
+                  <div class="merch_amount_only">10.00</div>
+                </div>
+                <div class="currency_symbol">EC</div>
+              </div>
+            </div>
+          </div>
+          <div class="single_merch">
+            <img
+              src="./images/top_picks/cup-black.webp"
+              class="merch_image"
+              alt="Top Pick Image"
+            />
+            <div class="merch_brief">
+              <div class="merch_name">Baby Cap</div>
+              <div class="merch_price">
+                <div class="merch_amount">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="ERC_Coin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"
+                    />
+                  </svg>
+                  <div class="merch_amount_only">10.00</div>
+                </div>
+                <div class="currency_symbol">EC</div>
+              </div>
+            </div>
+          </div>
+          <div class="single_merch">
+            <img
+              src="./images/top_picks/cup-black.webp"
+              class="merch_image"
+              alt="Top Pick Image"
+            />
+            <div class="merch_brief">
+              <div class="merch_name">Baby Cap</div>
+              <div class="merch_price">
+                <div class="merch_amount">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="ERC_Coin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"
+                    />
+                  </svg>
+                  <div class="merch_amount_only">10.00</div>
+                </div>
+                <div class="currency_symbol">EC</div>
+              </div>
+            </div>
+          </div>
+          <div class="single_merch">
+            <img
+              src="./images/top_picks/cup-black.webp"
+              class="merch_image"
+              alt="Top Pick Image"
+            />
+            <div class="merch_brief">
+              <div class="merch_name">Baby Cap</div>
+              <div class="merch_price">
+                <div class="merch_amount">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="ERC_Coin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"
+                    />
+                  </svg>
+                  <div class="merch_amount_only">10.00</div>
+                </div>
+                <div class="currency_symbol">EC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- <div class="more_options slide_out_left">
       <div class="cross">

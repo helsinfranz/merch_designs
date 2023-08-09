@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/checkout.css" />
+    <title>Merch</title>
+  </head>
+  <body>
+    <main>
+      <div class="checkout_information">
+        <div class="checkout_container">
+          <div class="purchase_logo">
+            <img src="./images/logos/purchase_logo.webp" alt="logo" />
+          </div>
+          <div class="payment_journey">
+            <div class="step_name step_on">Information</div>
+            <div class="step_seperator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <div class="step_name">Shipping</div>
+            <div class="step_seperator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <div class="step_name">Payment</div>
+          </div>
+          <div class="form-container">
+            <div class="form-heading top_heading">Contract</div>
+            <div class="form-field">
+              <label class="form-label" for="contact"
+                >Email or mobile phone number</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                id="contact"
+                placeholder="Email or mobile phone number"
+              />
+            </div>
+            <div class="form-field custom-checkbox">
+              <label class="form-checkbox-label" for="news-offers">
+                <input type="checkbox" id="news-offers" />
+                <span class="checkmark"></span>
+                Email me with news and offers
+              </label>
+            </div>
+            <div class="form-heading">Shipping address</div>
+            <div class="form-field">
+              <label class="form-label" for="country">Country/Region:</label>
+              <select class="form-input" id="country">
+                <option value="India">India</option>
+              </select>
+            </div>
+            <div class="name_fields">
+              <div class="form-field">
+                <label class="form-label" for="first-name">First name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="first-name"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="last-name">Last name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="last-name"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="address">Address</label>
+              <input
+                class="form-input"
+                type="text"
+                id="address"
+                placeholder="Address"
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="apt-suite"
+                >Apartment, suite, etc. (optional)</label
+              >
+              <input
+                class="form-input"
+                type="text"
+                id="apt-suite"
+                placeholder="Apartment, suite, etc. (optional)"
+              />
+            </div>
+            <div class="address_additional">
+              <div class="form-field">
+                <label class="form-label" for="city">City</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="city"
+                  placeholder="City"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="state">State:</label>
+                <select class="form-input" id="state">
+                  <option value="Delhi">Delhi</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Gurugram">Gurugram</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="zip-code">ZIP code</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="zip-code"
+                  placeholder="ZIP code"
+                />
+              </div>
+            </div>
+            <div class="form-field custom-checkbox">
+              <label class="form-checkbox-label" for="save-info">
+                <input type="checkbox" id="save-info" />
+                <span class="checkmark"></span>
+                Save this information for next time
+              </label>
+            </div>
+            <button class="form-button" type="button">
+              <div class="button_text">Continue to shipping</div>
+            </button>
+            <footer>
+              <div class="footer_rights">All rights reserved Merch Shop</div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <aside class="checkout_product_details">
+        <div class="cart_aside_details">
+          <div class="cart_products">
+            <div class="single_cart_product">
+              <div class="cart_product_img">
+                <img src="./images/top_picks/t-shirt-1.webp" alt="T-shirt" />
+                <div class="cart_product_quantity_popup">1</div>
+              </div>
+              <div class="cart_product_properties">
+                <div class="cart_product_name">Acme Circles T-Shirt</div>
+                <div class="cart_product_property">White / M</div>
+              </div>
+              <div class="cart_product_price_and_quantity">
+                <div class="cart_product_price">$15.00</div>
+              </div>
+            </div>
+            <div class="single_cart_product">
+              <div class="cart_product_img">
+                <img src="./images/top_picks/t-shirt-1.webp" alt="T-shirt" />
+                <div class="cart_product_quantity_popup">1</div>
+              </div>
+              <div class="cart_product_properties">
+                <div class="cart_product_name">Acme Circles T-Shirt</div>
+                <div class="cart_product_property">White / M</div>
+              </div>
+              <div class="cart_product_price_and_quantity">
+                <div class="cart_product_price">$15.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_pricing_details">
+            <div class="cart_pricing cart_pricing_taxes">
+              <div class="cart_pricing_label">Subtotal</div>
+              <div class="cart_pricing_selected_price cart_pricing_taxes_price">
+                $0.00
+              </div>
+            </div>
+            <div class="cart_pricing cart_pricing_shipping">
+              <div class="cart_pricing_label">Shipping</div>
+              <div class="cart_pricing_shipping_price">
+                Calculated at next step
+              </div>
+            </div>
+            <div class="cart_pricing cart_pricing_total">
+              <div class="cart_pricing_label cart_pricing_label_total">
+                Total
+              </div>
+              <div class="cart_pricing_selected_price cart_pricing_total_price">
+                <div class="cart_pricing_shipping_symbol">USD</div>
+                <div class="cart_pricing_shipping_total">$21.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>

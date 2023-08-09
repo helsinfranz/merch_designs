@@ -1,0 +1,477 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  background-color: rgb(23, 23, 23);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(163, 163, 163);
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+}
+
+html {
+  background-color: black !important;
+}
+
+main {
+  display: grid;
+  grid-template-columns: calc(50% + 8.8rem) 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Checkout Information */
+
+.checkout_information {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  /* width: 57.2rem; */
+}
+
+.checkout_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding-right: 7.2rem;
+  padding-top: 5.4rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5vw;
+}
+
+.purchase_logo img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.payment_journey {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.step_name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(115, 115, 115);
+}
+
+.step_on {
+  color: white;
+}
+
+.step_seperator > svg {
+  color: rgb(163, 163, 163);
+  width: 1rem;
+  height: 1rem;
+}
+
+.top_heading {
+  margin-top: 0.9rem !important;
+}
+
+.form-heading {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1.4rem;
+  width: 57.2rem;
+}
+.form-field {
+  margin-bottom: 15px;
+}
+
+/* .form-checkbox-label input[type="checkbox"] {
+  background-color: black;
+} */
+
+.form-label {
+  /* display: block; */
+  display: none;
+  /* font-weight: bold; */
+  /* margin-bottom: 5px; */
+}
+.form-input {
+  width: 100%;
+  background-color: black;
+  padding: 1.35rem 1.1rem;
+  border: 1px solid rgb(51, 51, 51);
+  color: white;
+  line-height: 2.1rem;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.form-input:focus {
+  /* box-sizing: border-box; */
+  outline: none !important;
+  /* border: 2px solid rgb(0, 112, 243); */
+  border-color: rgb(0, 112, 243);
+  transition: all 0.3s;
+  box-shadow: 0 0 0 1px rgb(0, 112, 243);
+}
+
+.name_fields {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.name_fields > div {
+  width: 100%;
+}
+
+#state {
+  height: 4.95rem;
+}
+
+.address_additional {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  /* justify-content: space-between; */
+}
+
+.address_additional > div {
+  width: 100%;
+}
+
+.form-checkbox-label {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Custom checkbox styling */
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-checkbox-label {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.form-checkbox-label input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgb(51, 51, 51);
+  background-color: black;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-checkbox-label input:focus ~ .checkmark {
+  border-color: rgb(0, 112, 243);
+  box-shadow: 0 0 0 4px rgba(27, 80, 142, 0.5);
+}
+
+.form-checkbox-label input:checked ~ .checkmark {
+  box-shadow: none;
+}
+
+/* Style for the custom checkmark */
+.checkmark::before {
+  content: "\2713"; /* Unicode checkmark symbol */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: white;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Adding opacity transition */
+}
+
+.form-checkbox-label input:checked ~ .checkmark::before {
+  opacity: 1; /* Show the checkmark */
+}
+
+.form-checkbox-label input:checked ~ .checkmark {
+  background-color: rgb(0, 112, 243);
+  border-color: rgb(0, 112, 243);
+}
+
+/*
+.custom-checkbox::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(0, 112, 243);
+  border: 1px solid rgb(0, 112, 243);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+}
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+} */
+
+.form-button {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  padding: 2.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 2.1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.form-button:focus {
+  /* box-sizing: border-box; */
+  outline: none !important;
+  /* border: 2px solid rgb(0, 112, 243); */
+  border-color: rgb(0, 112, 243);
+  transition: all 0.3s;
+  box-shadow: 0 0 0 4px rgba(0, 112, 243, 0.6);
+}
+
+.form-button:hover:not(.button_text) {
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+
+footer {
+  margin-top: 5.6rem;
+}
+
+.footer_rights {
+  display: flex;
+  align-items: center;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgb(51, 51, 51);
+  color: rgb(129, 129, 129);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Checkout Aside */
+
+.checkout_product_details {
+  display: flex;
+  justify-content: flex-start;
+  border-left: 1px solid rgb(51, 51, 51);
+}
+
+.cart_aside_details {
+  padding-left: 4.2rem;
+  padding-top: 5.4rem;
+  padding-bottom: 1.5rem;
+  padding-right: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart_products {
+  overflow: visible;
+  /* max-height: calc(100vh - 31.8rem); */
+}
+
+.single_cart_product {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  padding: 0.6rem 0;
+  width: 41.8rem;
+  /* border-bottom: 1px solid rgb(64, 64, 64); */
+}
+
+/* Cart Images */
+
+.cart_product_img {
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: black;
+  border: 1px solid rgb(64, 64, 64);
+  border-radius: 0.6rem;
+  position: relative;
+  /* cursor: pointer; */
+}
+
+.cart_product_img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .cart_product_img img:hover {
+  background-color: rgb(38, 38, 38);
+} */
+
+.cart_product_quantity_popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(115, 115, 115);
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -0.8rem;
+  margin-top: -0.8rem;
+}
+
+/* Cart Products */
+
+.cart_product_properties {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  /* cursor: pointer; */
+}
+
+.cart_product_name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.cart_product_property {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* price and quantity */
+
+.single_cart_product > div:last-child {
+  margin-left: auto;
+}
+
+.cart_product_price_and_quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.cart_product_price {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* .cart_product_quantity {
+  display: flex;
+  width: fit-content;
+  gap: 1.8rem;
+  padding: 1rem;
+  border: 1px solid rgb(64, 64, 64);
+  border-radius: 9999px;
+}
+
+.cart_product_quant {
+  color: rgb(64, 64, 64);
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+
+.cart_product_number {
+  color: white;
+} */
+
+/* Cart Pricing */
+
+.cart_pricing_details {
+  /* margin-top: auto; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  line-height: 1.2rem;
+}
+
+.cart_pricing {
+  display: flex;
+  padding: 0.75rem 0;
+  /* border-bottom: 1px solid rgb(64, 64, 64); */
+}
+
+.cart_pricing_label {
+  color: white;
+}
+
+.cart_pricing_shipping_price {
+  font-size: 1.2rem;
+}
+
+.cart_pricing_label_total {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.cart_pricing > div:last-child {
+  margin-left: auto;
+}
+
+.cart_pricing_selected_price {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.cart_pricing_total_price {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+
+.cart_pricing_shipping_symbol {
+  color: rgb(163, 163, 163);
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: end;
+}
+
+.cart_pricing_shipping_total {
+  font-size: 1.8rem;
+}
